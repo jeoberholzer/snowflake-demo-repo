@@ -8,3 +8,4 @@ SELECT
 FROM
     Customer c
 JOIN
+    Order o ON c.customer_id = o.customer_id;
