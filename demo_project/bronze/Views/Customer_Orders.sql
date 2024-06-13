@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW Bronze_Customer_Orders AS
+CREATE OR REPLACE VIEW {{ENV}}_DB.bronze.Customer_Orders AS
 SELECT
     c.customer_id,
     c.name AS customer_name,
@@ -8,4 +8,4 @@ SELECT
 FROM
     Customer c
 JOIN
-    Order o ON c.customer_id = o.customer_id;
+    Orders o ON c.customer_id = o.customer_id;

@@ -11,7 +11,7 @@ try {
                               o.product_id,
                               o.quantity
                        FROM Customer c
-                       JOIN Order o ON c.customer_id = o.customer_id`;
+                       JOIN Orders o ON c.customer_id = o.customer_id`;
 
     var stmt = snowflake.createStatement({sqlText: sql_command});
     stmt.execute();
