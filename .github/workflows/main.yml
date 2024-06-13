@@ -40,6 +40,7 @@ jobs:
  
       # ============ DEV ============
       - name: Deploy Snowflake objects to DEV
+        if: ${{ github.event.inputs.environment == 'DEV' }}
         env:
           SNOWFLAKE_CONNECTIONS_ACCOUNT: ${{ secrets.SNOWFLAKE_CONNECTIONS_ACCOUNT }}
           SNOWFLAKE_CONNECTIONS_USER: ${{ secrets.SNOWFLAKE_CONNECTIONS_USER }}
