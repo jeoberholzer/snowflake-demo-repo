@@ -1,4 +1,4 @@
-CREATE VIEW Bronze_Customer_Orders AS
+CREATE OR REPLACE VIEW Bronze_Customer_Orders AS
 SELECT
     c.customer_id,
     c.name AS customer_name,
