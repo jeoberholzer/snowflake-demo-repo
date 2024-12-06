@@ -37,8 +37,8 @@ jobs:
       - name: Snowflake CLI Installation
         uses: snowflake-labs/snowflake-cli-action@v1.1.0
 
-        #with:
-          #cli-version: "latest"
+        with:
+          cli-version: "latest"
           #default-config-file-path: "config.toml"
  
       # ============ DEV ============
