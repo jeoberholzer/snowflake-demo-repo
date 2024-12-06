@@ -35,7 +35,7 @@ jobs:
  
       # From: https://github.com/Snowflake-Labs/snowflake-cli-action
       - name: Snowflake CLI Installation
-        uses: snowflake-labs/snowflake-cli-action@v1.1.0
+        uses: snowflake-labs/snowflake-cli-action@v1.5
 
         with:
           cli-version: "latest"
