@@ -39,7 +39,7 @@ jobs:
 
         with:
           cli-version: "latest"
-          #default-config-file-path: "config.toml"
+          default-config-file-path: "config.toml"
  
       # ============ DEV ============
       - name: Deploy Snowflake objects to DEV
